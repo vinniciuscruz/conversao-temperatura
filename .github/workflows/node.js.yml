@@ -39,8 +39,8 @@ jobs:
     - name: Build e push da imagem Docker
       uses: docker/build-push-action@v5.3.0
       with:
-        context: src
-        file: Dockerfile
+        context: ./src
+        file: ./src/Dockerfile
         push: true
         tags: |          
           vinniciuscruz/aula-conversao-temperatura:v1
